@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blue Ocean Pharmaceuticals</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="images/logo.png" alt=" background.png" />
+  </div>
+<div style="height: 100px;"></div>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="promotions.html">Promotions</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+</header>
+  <section class="hero">
+    <div class="overlay">
+      <h2>Blue Ocean Pharmaceuticals</h2>
+
+      <p>Your health is our main priority!</p>
+      <p class="tagline"><em>Page · Medical &amp; health · Health/beauty</em></p>
+    </div>
+    </section>
+
+    <section>
+ <!-- Inquiry Button -->
+  <div class="inquiry-section">
+    <a href="contact.html" class="inquiry-btn">Send Inquiry</a>
+  
+
+    </div>
+    </section>
+  
+
+  <section class="location">
+    <h3>Visit Us</h3>
+    <address>
+      Shop G02 Angwa City Mall<br />
+      Corner Angwa Street and Kwame Nkrumah,<br />
+      Harare, Zimbabwe
+    </address>
+    <p><strong>Phone:</strong> (024) 2759123</p>
+    <p><strong>WhatsApp:</strong> 078802800</p>
+    <p><strong>Email:</strong> <a href="mailto:info@blueoceanpharmacy.co.zw">info@blueoceanpharmacy.co.zw</a></p>
+    <p><em>Not yet rated (0 reviews)</em></p>
+    <p class="cta-links">
+      <a class="btn" href="https://wa.me/26378802800" target="_blank" rel="noopener">Chat on WhatsApp</a>
+      <a class="btn outline" href="contact.html">Contact Us</a>
+    </p>
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blue Ocean Pharmacy - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section id="promotions">
+  <h2>🔥 Current Promotions</h2>
+
+  <div class="promotions-wrapper">
+    <!-- Left scroll button -->
+    <button class="scroll-btn left" onclick="scrollLeft()">&#10094;</button>
+
+    <!-- Scrollable promotions -->
+    <div class="promotions-scroll" id="promoCarousel">
+
+      <div class="promo-card" style="background-image: url('images/mouthwash.jpg');">
+        <div class="promo-overlay">
+          <h3>Nutri-tech</h3>
+          <p><span class="old-price">$12.00</span> <span class="new-price">$8.00</span></p>
+          <button class="buy-btn" onclick="contactWhatsApp('Nutri-tech')">Buy</button>
+        </div>
+      </div>
+
+      <div class="promo-card" style="background-image: url('images/nivea.jpg');">
+        <div class="promo-overlay">
+          <h3>White Diamond</h3>
+          <p><span class="old-price">$6.00</span> <span class="new-price">$3.50</span></p>
+          <button class="buy-btn" onclick="contactWhatsApp('White Diamond Spray')">Buy</button>
+        </div>
+      </div>
+
+      <div class="promo-card" style="background-image: url('images/senso.jpg');">
+        <div class="promo-overlay">
+          <h3>Sensodyne</h3>
+          <p><span class="old-price">$15.00</span> <span class="new-price">$10.00</span></p>
+          <button class="buy-btn" onclick="contactWhatsApp('Sensodyne toothpaste')">Buy</button>
+        </div>
+      </div>
+
+      <div class="promo-card" style="background-image: url('images/garnier.jpg.png');">
+        <div class="promo-overlay">
+          <h3>Garnier</h3>
+          <p><span class="old-price">$8.00</span> <span class="new-price">$5.00</span></p>
+          <button class="buy-btn" onclick="contactWhatsApp('Garnier Skin Active')">Buy</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Right scroll button -->
+    <button class="scroll-btn right" onclick="scrollRight()">&#10095;</button>
+  </div>
+</section>
+
+<script>
+  function scrollLeft() {
+    document.getElementById('promoCarousel').scrollBy({ left: -240, behavior: 'smooth' });
+  }
+
+  function scrollRight() {
+    document.getElementById('promoCarousel').scrollBy({ left: 240, behavior: 'smooth' });
+  }
+
+  function contactWhatsApp(product) {
+    // Replace with your actual WhatsApp number (no + or spaces, include country code)
+    const phoneNumber = "263771234567";  
+    const message = `Hello, I want to buy ${product}`;
+    window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, "_blank");
+  }
+</script>
+
+
+  <script>
+  // WhatsApp + Email Enquiry
+  function makeEnquiry(product) {
+    const phone = "263781802800"; // your WhatsApp number
+    const email = "blueoceanpharmacy@example.com"; // your email
+    const message = `Hello, I am interested in ${product}`;
+
+    // WhatsApp link
+    const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+    // Redirect to WhatsApp
+    window.open(whatsappUrl, "_blank");
+  }
+  </script>
+<!-- CUSTOMER REVIEWS -->
+<section id="reviews">
+  <h2>💬 What Our Customers Say</h2>
+  <div class="reviews-container">
+
+    <!-- Review 1 -->
+    <div class="review-card">
+      <img src="images/reviews3.png.png" alt="Mollen V">
+      <h3>Mollen V</h3>
+      <p>"Great service and very affordable prices. I always get my medicines on time!"</p>
+    </div>
+
+    <!-- Review 2 -->
+    <div class="review-card">
+      <img src="images/r10.png" alt="Reuel M">
+      <h3>Reuel M</h3>
+      <p>"Professional staff and excellent promotions. Highly recommend Blue Ocean Pharmacy!"</p>
+    </div>
+
+    <!-- Review 3 -->
+    <div class="review-card">
+      <img src="images/r3.jpeg" alt="Lista K">
+      <h3>Lista K</h3>
+      <p>"Very reliable and responsive. I even get delivery through WhatsApp ordering!"</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<footer>
+  <p>© 2025 Blue Ocean Pharmacy. All rights reserved.</p>
+  <p>Designed by Rennel M</p>
+2  <div class="socials">
+    <a href="https://www.facebook.com/profile.php?id=100073375423652&__cft__[0]=AZVi8v0W5vNwQrZlj7Z3dz89jPTVKHzTyn_aFnvY6wawNbMbqQgrZ8bmYmm2peDD73g5kVCKeHvZMnB6_q-RIi1gyrbCg9s5Qt5rjWMC0y_Z-U5HdpXFkdZ-UfaqUJ73e8u87DRhXYCCUKpGD8RpZa30FTQ4C0_em1aVY7EbbnkkanVCqx8RSvxZi-fVtKZ1BaQ&__tn__=-]K-R" target="_blank" rel="noopener">Facebook</a>
+    <span>·</span>
+    <a href="https://wa.me/26378802800" target="_blank" rel="noopener">WhatsApp</a>
+    <span>·</span>
+    <a href="https://www.instagram.com/blueoceanpharmacy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">Instagram</a>
+  </div>
+</footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

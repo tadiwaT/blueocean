@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blue Ocean Pharmacy</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+
+    .wholesale-gallery {
+      display: flex;
+      flex-wrap: wrap; 
+      justify-content: space-around; 
+    }
+
+    .wholesale-card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 10px;
+      margin: 10px;
+      text-align: center;
+      width: 200px; 
+    }
+
+    .wholesale-card img {
+      width: 100%;
+      height: auto; 
+      border-radius: 4px; 
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <img src="images/logo.png" alt="Blue Ocean Pharmacy Logo" />
+    <h1>Services</h1>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="promotions.html">Promotions</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="content">
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services-container">
+      
+      <div class="service-card" style="background-image: url('images/bloodchecks.png');">
+        <h3>Blood Pressure Checks</h3>
+        <p>Visit our pharmacies for a professional blood pressure check with personalized advice.</p>
+      </div>
+
+      
+      <div class="service-card" style="background-image: url('images/images\ \(1\).jpeg');">
+        <h3>Medication Consultation</h3>
+        <p>Get guidance on your prescription and over-the-counter medications from trained staff.</p>
+      </div>
+
+      
+      <div class="service-card" style="background-image: url('images/images.jpeg');">
+        <h3>Dial delivery</h3>
+        <p>
+
+Our Dial Delivery service makes it easier for you to get the medicines
+,simply call or WhatsApp us to place your order.
+ .</p>
+      </div>
+
+      
+      <div class="service-card" style="background-image: url('images/images\ 2.jpeg');">
+        <h3>Special Promotions</h3>
+        <p>Check our latest offers on medicines and wellness products.</p>
+      </div>
+
+      
+      <div class="service-card" style="background-image: url('images/warehouse.jpg');">
+        <h3>Wholesale</h3>
+        <p>Supplies generic and imported medicines to other healthcare outlets.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="wholesale">
+    <h2>🛒 Wholesale Products</h2>
+    <div class="wholesale-gallery">
+
+      
+      <div class="wholesale-card">
+        <img src="images/whole1.jpg" alt="Wholesale Product 1">
+        <h3>kotex all nighters</h3>
+        <p>Price: $1.25</p>
+        <button onclick="makeEnquiry('Wholesale Product 1 - $12.00')">Buy </button>
+      </div>
+
+      <div class="wholesale-card">
+        <img src="images/whole2.jpg" alt="Wholesale Product 2">
+        <h3>Huggies Extra care 1- 4</h3>
+        <p>Price: $15.00</p>
+        <button onclick="makeEnquiry('Wholesale Product 2 - $25.00')">Buy </button>
+      </div>
+
+      <div class="wholesale-card">
+        <img src="images/whole3.jpg" alt="Wholesale Product 3">
+        <h3>Predo Size 2 - 6 </h3>
+        <p>Price: $9.00</p>
+        <button onclick="makeEnquiry('Wholesale Product 3 - $18.00')">Buy </button>
+      </div>
+
+      <div class="wholesale-card">
+        <img src="images/whole4.jpg" alt="Wholesale Product 4">
+        <h3>Pampers size 1& 3 </h3>
+        <p>Price: $11.00</p>
+        <button onclick="makeEnquiry('Wholesale Product 4 - $40.00')">Buy</button>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="reviews">
+    <h2>💬 What Our Clients Think</h2>
+    <div class="reviews-container">
+      <div class="review-card">
+        <img src="images/r11.jpeg" alt="Tariro P">
+        <h3>Tariro P</h3>
+        <p>"The pharmacy’s health checks helped me monitor my blood pressure easily."</p>
+      </div>
+      <div class="review-card">
+        <img src="images/r9.jpeg" alt="Brian T">
+        <h3>Brian T</h3>
+        <p>"Their advice on medication is professional and very helpful."</p>
+      </div>
+      <div class="review-card">
+        <img src="images/r8.jpeg" alt="Nyarai D">
+        <h3>Nyarai D</h3>
+        <p>"I appreciate the wide variety of medicines available. Always well-stocked!"</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 Blue Ocean Pharmacy. All rights reserved.</p>
+  <p>Designed by Rennel M</p>
+  <div class="socials">
+    <a href="https://www.facebook.com/profile.php?id=100073375423652" target="_blank" rel="noopener">Facebook</a>
+    <span>·</span>
+    <a href="https://wa.me/26378802800" target="_blank" rel="noopener">WhatsApp</a>
+    <span>·</span>
+    <a href="https://www.instagram.com/blueoceanpharmacy" target="_blank" rel="noopener">Instagram</a>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
