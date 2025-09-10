@@ -6,6 +6,120 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blue Ocean Pharmacy</title>
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+    }
+
+    .logo img {
+      max-height: 100px;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+    }
+
+    nav {
+      width: 100%;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap; /* Allow wrapping for smaller screens */
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 5px 10px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    main.content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    #reviews {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .reviews-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .review-card {
+      margin: 10px;
+      text-align: center;
+    }
+
+    .review-card img {
+      width: 100px; /* Fixed width for review images */
+      height: auto;
+      border-radius: 50%; /* Circular images */
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f8f9fa;
+    }
+
+    footer .socials {
+      margin-top: 10px;
+    }
+
+    footer .socials a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #007bff;
+    }
+
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block; /* Show the toggle button on mobile */
+      }
+
+      nav ul {
+        display: none; /* Hide the menu by default */
+        flex-direction: column; /* Stack nav items vertically */
+        max-height: 0; /* Collapsed height */
+        overflow: hidden; /* Hide overflow */
+      }
+
+      nav ul.active {
+        display: flex; /* Show menu when active */
+        max-height: 300px; /* Expand height to show items */
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -13,32 +127,32 @@
 <header>
   <div class="logo">
     <img src="images/logo.png" alt="Blue Ocean Pharmacy Logo" />
-    <h1>About us</h1>
+    <h1>About Us</h1>
   </div>
-
-<nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="promotions.html">Promotions</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="about.html">About</a></li>
-  </ul>
-</nav>
-
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <nav>
+    <ul id="navMenu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="promotions.html">Promotions</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
 </header>
 
-  <main class="content">
-    <h2>About Blue Ocean Pharmacy</h2>
-    <p>Blue Ocean Pharmacy is committed to accessible, trustworthy healthcare for our community in Harare.
-    From prescriptions and 24/7 assistance to wellness products and friendly advice, we put your health first.</p>
-    <ul>
-      <li>Open 24/7</li>
-      <li>Expert pharmacists</li>
-      <li>Convenient Angwa City Mall location</li>
-    </ul>
-  </main>
-  <section id="reviews">
+<main class="content">
+  <h2>About Blue Ocean Pharmacy</h2>
+  <p>Blue Ocean Pharmacy is committed to accessible, trustworthy healthcare for our community in Harare.
+  From prescriptions and 24/7 assistance to wellness products and friendly advice, we put your health first.</p>
+  <ul>
+    <li>Open 24/7</li>
+    <li>Expert pharmacists</li>
+    <li>Convenient Angwa City Mall location</li>
+  </ul>
+</main>
+
+<section id="reviews">
   <h2>💬 Why Customers Trust Us</h2>
   <div class="reviews-container">
     <div class="review-card">
@@ -59,19 +173,24 @@
   </div>
 </section>
 
-
 <footer>
   <p>© 2025 Blue Ocean Pharmacy. All rights reserved.</p>
   <p>Designed by Rennel M</p>
   <div class="socials">
-    <a href="https://www.facebook.com/profile.php?id=100073375423652&__cft__[0]=AZVi8v0W5vNwQrZlj7Z3dz89jPTVKHzTyn_aFnvY6wawNbMbqQgrZ8bmYmm2peDD73g5kVCKeHvZMnB6_q-RIi1gyrbCg9s5Qt5rjWMC0y_Z-U5HdpXFkdZ-UfaqUJ73e8u87DRhXYCCUKpGD8RpZa30FTQ4C0_em1aVY7EbbnkkanVCqx8RSvxZi-fVtKZ1BaQ&__tn__=-]K-R" target="_blank" rel="noopener">Facebook</a>
+    <a href="https://www.facebook.com/profile.php?id=100073375423652" target="_blank" rel="noopener">Facebook</a>
     <span>·</span>
     <a href="https://wa.me/26378802800" target="_blank" rel="noopener">WhatsApp</a>
     <span>·</span>
-    <a href="https://www.instagram.com/blueoceanpharmacy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.instagram.com/blueoceanpharmacy" target="_blank" rel="noopener">Instagram</a>
   </div>
 </footer>
 
-  <script src="js/script.js"></script>
+<script src="js/script.js"></script>
+<script>
+  function toggleMenu() {
+    const navMenu = document.getElementById('navMenu');
+    navMenu.classList.toggle('active'); // Toggle the active class for showing the menu
+  }
+</script>
 </body>
 </html>

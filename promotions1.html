@@ -15,29 +15,20 @@
 
     header {
       display: flex;
-      flex-direction: column;
       align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
       background-color: #007bff;
       color: white;
-      padding: 10px;
     }
 
     .logo img {
       max-height: 50px;
     }
 
-    .menu-toggle {
-      display: none;
-      font-size: 24px;
-      cursor: pointer;
-      background: none;
-      border: none;
-      color: white;
-      padding: 10px 20px;
-    }
-
     nav {
-      width: 100%;
+      flex-grow: 1;
+      text-align: right;
     }
 
     nav ul {
@@ -46,17 +37,15 @@
       margin: 0;
       display: flex;
       justify-content: flex-end;
-      flex-wrap: wrap; /* Allow wrapping for smaller screens */
     }
 
     nav ul li {
-      margin: 5px 10px;
+      margin-left: 20px;
     }
 
     nav ul li a {
       color: white;
       text-decoration: none;
-      padding: 10px;
     }
 
     .promotions-scroll {
@@ -88,20 +77,18 @@
     }
 
     @media (max-width: 768px) {
-      .menu-toggle {
-        display: block; /* Show the toggle button on mobile */
-      }
-
       nav ul {
-        display: none; /* Hide the menu by default */
-        flex-direction: column; /* Stack nav items vertically */
-        max-height: 0; /* Collapsed height */
-        overflow: hidden; /* Hide overflow */
+        flex-direction: column; /* Stack nav items on smaller screens */
+        align-items: flex-start;
       }
 
-      nav ul.active {
-        display: flex; /* Show menu when active */
-        max-height: 300px; /* Expand height to show items */
+      nav ul li {
+        margin: 10px 0; /* Add spacing between items */
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
       }
     }
 
@@ -158,11 +145,6 @@
         behavior: "smooth"
       });
     }
-
-    function toggleMenu() {
-      const navMenu = document.getElementById('navMenu');
-      navMenu.classList.toggle('active'); // Toggle the active class for showing the menu
-    }
   </script>
 </head>
 
@@ -174,9 +156,8 @@
     <h1>Promotions</h1>
   </div>
 
-  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
   <nav>
-    <ul id="navMenu">
+    <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="promotions.html">Promotions</a></li>
